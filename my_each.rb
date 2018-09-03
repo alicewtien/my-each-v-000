@@ -4,5 +4,5 @@ def my_each(collection) # put argument(s) here
     yield collection[i]
     i = i + 1
   end
-  puts collection["#{i}"].to_i
+  collection["#{i}"].to_i
 end
