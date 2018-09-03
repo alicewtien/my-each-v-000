@@ -1,8 +1,8 @@
 def my_each(collection) # put argument(s) here
   i = 0
-  while i < collection.length
-    yield collection.to_i[i]
-    i = i + 1
+  while collection.length > 0
+    yield collection[i]
+    i += 1
   end
   collection["#{i}"].
 end
