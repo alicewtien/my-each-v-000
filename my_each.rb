@@ -1,8 +1,10 @@
 def my_each(collection) # put argument(s) here
-  i = 0
-  while collection.length > 0
-    yield collection[i]
-    i += 1
+  if collection.length > 0
+    i = 0
+    while collection.length > 0
+      yield collection[i]
+      i += 1
+    end
+    collection
   end
-  collection
 end
